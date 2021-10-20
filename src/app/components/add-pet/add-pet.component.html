@@ -1,0 +1,15 @@
+<form class="example-form" #form="ngForm" (ngSubmit)="onSubmit()">
+    <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Breed</mat-label>
+        <input matInput placeholder="Enter Dog Breed" [(ngModel)]="breed" name="breed">
+    </mat-form-field>
+    <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Img Url</mat-label>
+        <input matInput [(ngModel)]="url" name="url">
+    </mat-form-field>
+    <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Description</mat-label>
+        <input matInput [(ngModel)]="description" name="description">
+    </mat-form-field>
+    <button mat-raised-button color="primary">Add</button>
+</form>
